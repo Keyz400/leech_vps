@@ -8,6 +8,7 @@ from hachoir.parser import createParser
 from PIL import Image
 from tobrot import DOWNLOAD_LOCATION
 
+
 async def save_thumb_nail(client, message):
     thumbnail_location = os.path.join(
         DOWNLOAD_LOCATION,
