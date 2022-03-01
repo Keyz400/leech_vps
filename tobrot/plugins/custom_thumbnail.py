@@ -1,7 +1,7 @@
   #ThumbNail utilities, © @AnyDLBot
 
-import os
 
+  import os
 
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
