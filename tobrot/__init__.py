@@ -52,17 +52,17 @@ for imp in ["TG_BOT_TOKEN", "APP_ID", "API_HASH", "OWNER_ID", "AUTH_CHANNEL"]:
         exit()
 
 # The Telegram API things
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-APP_ID = int(os.environ.get("APP_ID", 12345))
-API_HASH = os.environ.get("API_HASH")
-OWNER_ID = int(os.environ.get("OWNER_ID", 539295917))
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5615063323:AAHzWuekv-wIvLHRJo3cOcAhj1daMZxsqEI")
+APP_ID = int(os.environ.get("APP_ID", 11321821))
+API_HASH = os.environ.get("API_HASH", bbf63cf902c2548c31963ccd88c4c6f7)
+OWNER_ID = int(os.environ.get("OWNER_ID", 5665936025))
 
 # Get these values from my.telegram.org
 # to store the channel ID who are authorized to use the bot
 AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "539295917").split()]
 
 # Cuz most ppl dunno AUTH_CHANNEL also works as SUDO
-SUDO_USERS = [int(sudos) if (' ' not in os.environ.get('SUDO_USERS', '')) else int(sudos) for sudos in os.environ.get('SUDO_USERS', '').split()]
+SUDO_USERS = [int(sudos) if (' ' not in os.environ.get('SUDO_USERS', '5665936025')) else int(sudos) for sudos in os.environ.get('SUDO_USERS', '').split()]
 
 # the download location, where the HTTP Server runs
 DOWNLOAD_LOCATION = "./DOWNLOADS"
@@ -70,7 +70,7 @@ DOWNLOAD_LOCATION = "./DOWNLOADS"
 MAX_FILE_SIZE = 50000000
 TG_MAX_FILE_SIZE = 2097152000
 FREE_USER_MAX_FILE_SIZE = 50000000
-AUTH_CHANNEL.append(OWNER_ID)
+AUTH_CHANNEL.append(5665936025)
 AUTH_CHANNEL += SUDO_USERS
 # chunk size that should be used with requests
 CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
